@@ -3,25 +3,35 @@ Java课程作业项目仓库
 #阅读程序
 
 ##实验目的
-用类描述计算机CPU速度和硬盘容量
+初步了解分析系统需求，从学生选课角度了解系统中的实体及其关系，学会定义类中的属性以及方法：
+掌握面向对象的类设计方法（属性 方法）；
+掌握类的继承用法，通过构造方法实例化对象；
+学会使用super（），用于实例化子类；
+掌握使用Object跟类的toString（）方法，应用在相关对象的信息输出中。
 ##实验过程
 1.在项目中创建pack1
-2.在pack1根据实验需求创建PC CPU HardDisk Test四个主类
-3.PC类中有speed getspeed。其中getspeed（）返回speed的值。创建setspeed（int speed）方法，把值赋予speed
-4.然后HardDisk类中有amount getamount（），并且getamount（）返回amount的值。创建setamount（int amount）的方法，将值赋予amount
-5.根据 UML图，在PC类中要求使用setup（）将值赋予给cpu；使用setAmount（）将参数赋予给HD，最后使用void show（）输出语句
-6.Test类中需要main方法分别创建CPU HardDisk PC三个对象cpu disk pc，并为cpu和disk赋予初始值2200,200
-7.pc以实参cpu调用setCPU方法，以实参disk调用setHardDisk方法
-8.调用PC中的void show（）显示结果
+2.创建父类person，定义属性id name sex
+3.用extend方法创建子类teacher，定义新属性所选课程
+4.用extend方法创建子类student，定义新属性所选课程
+5.创建course课程类，定义属性：编号courseid，上课地点place，时间coursetime，课程名称coursename, 讲课老师teacher.name
+6.在student学生类中创建选课和退课两种方法并打印信息
+7.创建主函数main并且创建实例，在选可获退课成功时打印课程信息
+
 ##核心方法
-1.CPU HardDisk类中的setspeed（int speed） setAmount（int amount）方法
-2.在需要赋值的地方是要美好this。方法
+1.使用new方法实例化对象
+2.使用extend继承父类方法并创建子类
 
 ##实验结果
-2200
-200
+课程信息：
+ 学生姓名  张三
+ 编号      01
+ 课程名称  java
+ 上课地点  教201
+ 时间      ...
+ 授课老师  张老师
+
 
 ##实验心得
-通过本次实验让我学到了如何使用this.的方法
+通过本次实验让我学到了如何使用extend继承父类方法并创建子类。掌握面向对象的类设计方法（属性 方法），掌握类的继承用法，通过构造方法实例化对象并且学会使用super（），用于实例化子类。
 
 
